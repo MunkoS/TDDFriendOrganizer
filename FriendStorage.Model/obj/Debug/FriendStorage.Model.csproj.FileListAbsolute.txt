@@ -1,0 +1,14 @@
+E:\видоссики\3-wpf-mvvm-test-driven-development-viewmodels-m3-exercise-files\after\FriendStorage\FriendStorage.Model\bin\Debug\FriendStorage.Model.dll
+E:\видоссики\3-wpf-mvvm-test-driven-development-viewmodels-m3-exercise-files\after\FriendStorage\FriendStorage.Model\bin\Debug\FriendStorage.Model.pdb
+E:\видоссики\3-wpf-mvvm-test-driven-development-viewmodels-m3-exercise-files\after\FriendStorage\FriendStorage.Model\obj\Debug\FriendStorage.Model.csprojResolveAssemblyReference.cache
+E:\видоссики\3-wpf-mvvm-test-driven-development-viewmodels-m3-exercise-files\after\FriendStorage\FriendStorage.Model\obj\Debug\FriendStorage.Model.dll
+E:\видоссики\3-wpf-mvvm-test-driven-development-viewmodels-m3-exercise-files\after\FriendStorage\FriendStorage.Model\obj\Debug\FriendStorage.Model.pdb
+C:\Users\sergey\Desktop\after\FriendStorage\FriendStorage.Model\bin\Debug\FriendStorage.Model.dll
+C:\Users\sergey\Desktop\after\FriendStorage\FriendStorage.Model\bin\Debug\FriendStorage.Model.pdb
+C:\Users\sergey\Desktop\after\FriendStorage\FriendStorage.Model\obj\Debug\FriendStorage.Model.csprojResolveAssemblyReference.cache
+C:\Users\sergey\Desktop\after\FriendStorage\FriendStorage.Model\obj\Debug\FriendStorage.Model.dll
+C:\Users\sergey\Desktop\after\FriendStorage\FriendStorage.Model\obj\Debug\FriendStorage.Model.pdb
+C:\Users\sergey\Desktop\программирование\FriendStorage\FriendStorage.Model\bin\Debug\FriendStorage.Model.dll
+C:\Users\sergey\Desktop\программирование\FriendStorage\FriendStorage.Model\bin\Debug\FriendStorage.Model.pdb
+C:\Users\sergey\Desktop\программирование\FriendStorage\FriendStorage.Model\obj\Debug\FriendStorage.Model.dll
+C:\Users\sergey\Desktop\программирование\FriendStorage\FriendStorage.Model\obj\Debug\FriendStorage.Model.pdb

@@ -10,7 +10,7 @@ namespace FriendStorage.UI.DataProvider
 
         public FriendDataProvider(Func<IDataService> dataServiceCreator)
         {
-            dataServiceCreator = _dataServiceCreator;
+            _dataServiceCreator = dataServiceCreator;
         }
         public void DeleteFriend(int id)
         {

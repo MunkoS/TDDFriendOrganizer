@@ -9,11 +9,14 @@
     <ItemsControl ItemsSource="{Binding Friends}" Foreground="White">
       <ItemsControl.ItemTemplate>
         <DataTemplate>
-          <Button Command="{Binding OpenFriendEditViewCommand}"
+           <Button Command="{Binding OpenFriendEditViewCommand}"
                   Style="{StaticResource NavigationButtonStyle}">
-            <TextBlock Text="{Binding DisplayMember}"/>
-          </Button>
+                        <TextBlock  Text="{Binding DisplayMember}"/>
+
+                    </Button>
+            
         </DataTemplate>
+          
       </ItemsControl.ItemTemplate>
     </ItemsControl>
   </ScrollViewer>

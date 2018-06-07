@@ -96,6 +96,19 @@ namespace FriendStorage.UITests.ViewModel
 
             Assert.Equal(3, _viewModel.FriendEditViewModels.Count);
         }
+
+        [Fact]
+        public void ShouldRemoveFriendEditViewModelOnCloseFriendTabCommand()
+        {
+         
+            _openFriendEditViewEvent.Publish(7);
+
+            var friendEditVm = _viewModel.SelectedFriendEditViewModel;
+            _viewModel.CloseFriendTabCommand.Execute(friendEditVm);
+
+            Assert.Equal(0, _viewModel.FriendEditViewModels.Count);
+
+        }
     }
 
 

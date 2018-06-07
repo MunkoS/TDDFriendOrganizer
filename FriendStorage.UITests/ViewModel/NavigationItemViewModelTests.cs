@@ -23,7 +23,7 @@ namespace FriendStorage.UITests.ViewModel
             var viewModel = new NavigationItemViewModel(friendId,
                 "Sergey",
                 eventAggregatorMock.Object);
-            viewModel.OpenFriendEditView.Execute(null);
+            viewModel.OpenFriendEditViewCommand.Execute(null);
 
             eventMock.Verify(e => e.Publish(friendId),Times.Once);
 

@@ -3,6 +3,7 @@ using FriendStorage.DataAccess;
 using FriendStorage.UI.DataProvider;
 using FriendStorage.UI.View;
 using FriendStorage.UI.ViewModel;
+using Prism.Events;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,25 +12,34 @@ using System.Threading.Tasks;
 
 namespace FriendStorage.UI.Startup
 {
-  public class BootStrapper
-  {
-    public IContainer BootStrap()
+    public class BootStrapper
     {
-      var builder = new ContainerBuilder();
+        public IContainer BootStrap()
+        {
+            var builder = new ContainerBuilder();
 
-      builder.RegisterType<MainWindow>().AsSelf();
-      builder.RegisterType<MainViewModel>().AsSelf();
+            builder.RegisterType<EventAggregator>()
+                      .As<IEventAggregator>().SingleInstance(); ;
 
-      builder.RegisterType<NavigationViewModel>()
-        .As<INavigationViewModel>();
+            builder.RegisterType<MainWindow>().AsSelf();
+            builder.RegisterType<MainViewModel>().AsSelf();
 
-      builder.RegisterType<NavigationDataProvider>()
-        .As<INavigationDataProvider>();
+            builder.RegisterType<FriendDataProvider>()
+                .As<IFriendDataProvider>();
 
-      builder.RegisterType<FileDataService>()
-        .As<IDataService>();
+            builder.RegisterType<NavigationViewModel>()
+                .As<INavigationViewModel>();
 
-      return builder.Build();
+            builder.RegisterType<FriendEditViewModel>()
+            .As<IFriendEditViewModel>();
+
+            builder.RegisterType<NavigationDataProvider>()
+              .As<INavigationDataProvider>();
+
+            builder.RegisterType<FileDataService>()
+              .As<IDataService>();
+
+            return builder.Build();
+        }
     }
-  }
 }

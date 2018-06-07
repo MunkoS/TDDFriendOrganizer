@@ -3,6 +3,7 @@ using System.Windows.Input;
 using System;
 using Prism.Events;
 using FriendStorage.UI.Events;
+using System.Windows;
 
 namespace FriendStorage.UI.ViewModel
 {
@@ -16,9 +17,13 @@ namespace FriendStorage.UI.ViewModel
         {
             Id = id;
             DisplayMember = displayMember;
-            OpenFriendEditView = new DelegateCommand(OnFriendEditViewExecute);
+            OpenFriendEditViewCommand = new DelegateCommand(OnFriendEditViewExecute);
+
             _eventAggregator = eventAggregator;
+          
         }
+
+
 
         private void OnFriendEditViewExecute()
         {
@@ -28,7 +33,8 @@ namespace FriendStorage.UI.ViewModel
 
         public string DisplayMember { get; private set; }
         public int Id { get; private set; }
-        public ICommand OpenFriendEditView;
-       
+        public ICommand OpenFriendEditViewCommand { get; }
+    
+
     }
 }

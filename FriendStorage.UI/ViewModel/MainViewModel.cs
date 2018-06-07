@@ -2,6 +2,7 @@
 using Prism.Events;
 using System;
 using System.Collections.ObjectModel;
+using System.Linq;
 
 namespace FriendStorage.UI.ViewModel
 {
@@ -23,9 +24,14 @@ namespace FriendStorage.UI.ViewModel
 
         private void OnOpenFriendEditView(int friendId)
         {
-           var friendEditVm = _friendEditVmCreator();
-            FriendEditViewModels.Add(friendEditVm);
-            friendEditVm.Load(friendId);
+
+            var friendEditVm = FriendEditViewModels.SingleOrDefault(vm => vm.Friend.Id == friendId);
+            if (friendEditVm == null)
+            {
+                friendEditVm= _friendEditVmCreator();
+                FriendEditViewModels.Add(friendEditVm);
+                friendEditVm.Load(friendId);
+            }
             SelectedFriendEditViewModel = friendEditVm;
         }
 
@@ -43,6 +49,7 @@ namespace FriendStorage.UI.ViewModel
             set
             {
                 _selectedFriendEditViewModel = value;
+                OnPropertyChanged();
             }
         }
 

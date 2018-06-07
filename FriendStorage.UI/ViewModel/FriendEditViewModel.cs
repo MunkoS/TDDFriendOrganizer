@@ -1,4 +1,5 @@
 ﻿using FriendStorage.DataAccess;
+using FriendStorage.Model;
 using System;
 
 namespace FriendStorage.UI.ViewModel
@@ -6,14 +7,19 @@ namespace FriendStorage.UI.ViewModel
     public interface IFriendEditViewModel
     {
         void Load(int friendId);
+        Friend Friend { get; }
     }
 
     public class FriendEditViewModel : ViewModelBase, IFriendEditViewModel
     {
-        public FriendEditViewModel()
+        public Friend Friend
         {
-            //FileDataService
+            get
+            {
+                throw new NotImplementedException();
+            }
         }
+
         public void Load(int friendId)
         {
             throw new NotImplementedException();
